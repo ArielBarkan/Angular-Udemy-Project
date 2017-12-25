@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Recipe} from '../../../shared/models/recipe.model';
 
 @Component({
@@ -8,14 +8,15 @@ import {Recipe} from '../../../shared/models/recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
 
+  @Output() emitterItemSelected =new EventEmitter<void>();
   @Input() singleRecipe :Recipe
   constructor() { }
 
   ngOnInit() {
   }
 
-  itemSelected(event:MouseEvent){
-    console.log(event);
+  itemSelected(){
+    this.emitterItemSelected.emit();
   }
 
 }

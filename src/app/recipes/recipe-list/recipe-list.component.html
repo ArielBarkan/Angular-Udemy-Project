@@ -15,6 +15,7 @@
     <app-recipe-item
       *ngFor="let singleRecipe of recipes"
       [singleRecipe]="singleRecipe"
+      (emitterItemSelected)="onEmitterItemSelected(singleRecipe)"
     ></app-recipe-item>
   </div>
 </div>
