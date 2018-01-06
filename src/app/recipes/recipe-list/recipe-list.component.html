@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success faa-parent animated-hover">
+        New Recipe
+        <i class="fa fa-magic  faa-wrench"></i>
+    </button>
+  </div>
+
+
+</div>
+<br>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item
+      *ngFor="let singleRecipe of recipes"
+      [singleRecipe]="singleRecipe"
+      (emitterItemSelected)="onEmitterItemSelected(singleRecipe)"
+    ></app-recipe-item>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<a
+  href="#"
+  class="list-group-item clearfix"
+  style="cursor: pointer"
+  (click)="itemSelected()"
+>
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{singleRecipe.name}}</h4>
+    <p class="list-group-item-text">{{singleRecipe.description}}</p>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="singleRecipe.imagePath"
+          [alt]="singleRecipe.name"
+          [title]="singleRecipe.name"
+          class="img-responsive"
+          style="max-height: 50px"
+        >
+      </span>
+</a>
