@@ -14,11 +14,12 @@
   "dependencies": {
     "@angular/animations": "9.1.0",
     "@angular/common": "9.1.0",
+    "@angular/compiler": "9.1.0",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/core": "9.1.0",
     "@angular/forms": "9.1.0",
     "@angular/platform-browser": "9.1.0",
     "@angular/platform-browser-dynamic": "9.1.0",
-    "@angular/compiler": "9.1.0",
     "@angular/router": "9.1.0",
     "angular-font-awesome": "3.1.2",
     "bootstrap": "4.4.1",
@@ -29,6 +30,7 @@
     "popper.js": "1.16.1",
     "rxjs": "6.5.4",
     "tslib": "1.11.1",
+    "typescript": ">=2.4.2 <2.7",
     "zone.js": "0.10.3"
   },
   "devDependencies": {
